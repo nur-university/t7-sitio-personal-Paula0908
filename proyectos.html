@@ -1,0 +1,191 @@
+<!DOCTYPE HTML>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mi perfil Profesional - Proyectos</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+    </head>
+    <body>
+        <header class="bg-dark text-white p-3">
+            <div class="container justify-content-between">
+                <h1>Mi Perfil Profesional: <br>Proyectos</h1>
+                <ul class="nav  justify-content-end" style="font-size: larger;">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="proyectos.html">Proyectos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="contacto.html">Contacto</a>
+                    </li>
+                  </ul>
+            </div>
+        </header>
+        <section id="proyectos" class="mb-4 mt-4">
+
+            <div class="container">
+                <div>
+                    <div class="text-center mb-4">
+                        <h2 class="p-4 bg-dark text-white rounded-3">Proyecto 1: Salon de Baile</h2>
+                        <a href="https://youtu.be/HowkhO4YARA?si=hTCZ1O3-2yfMwfAL" target="_blank">
+                        <img src="imagenes/ProyectoSalonDeBaile.jpg" class="img-fluid rounded-3" alt="Imagen de proyecto1" width="600"></a>
+                    </div>
+                    <div style="font-size: large;">
+                        <p>
+                            En este proyecto, mi grupo y yo diseñamos un sistema para representar 
+                            cómo los procesos ingresan a la <strong>zona crítica</strong> de una computadora. 
+                            Para hacerlo más comprensible, utilizamos la analogía de un <strong>salón de baile</strong>.
+                        </p>
+                          
+                        <p>
+                            En esta representación, la <strong>pista de baile</strong> simboliza la zona crítica, y las 
+                            <strong>parejas de baile</strong> representan la interacción entre <strong>procesos</strong> y 
+                            <strong>recursos</strong>. Cada pareja está compuesta por un miembro de cada grupo: uno representa 
+                            un proceso y el otro un recurso. Esto refleja cómo un proceso necesita de un recurso específico 
+                            para ejecutar su tarea dentro de la zona crítica. <strong>No pueden formarse parejas con dos 
+                            procesos o dos recursos</strong>, ya que ambos roles son necesarios para una ejecución válida.
+                        </p>
+                          
+                        <p>
+                            Las parejas pueden organizarse al inicio de cada ronda <strong>de forma ordenada</strong> 
+                            (por ejemplo, h1 con m1, h2 con m2...) o <strong>mezclada</strong>, según se desee. 
+                            El acceso a la pista (zona crítica) se gestiona en turnos: las parejas pueden ingresar 
+                            <strong>por orden de llegada o por prioridad</strong>.
+                        </p>
+                          
+                        <p>
+                            La prioridad puede ser <strong>modificada manualmente por el usuario</strong> durante la 
+                            simulación: basta con hacer clic sobre alguno de los elementos (por ejemplo, h4), y la pareja 
+                            correspondiente pasará a ser la siguiente en ingresar a la pista una vez que la pareja actual 
+                            termine su turno. Esta acción <strong>no interrumpe el baile actual</strong>, sino que define 
+                            qué pareja será la siguiente en acceder al recurso.
+                        </p>
+                          
+                        <p>
+                            Una vez que un proceso finaliza su uso del recurso, este último puede ser reutilizado por 
+                            otro proceso sin importar si ya fue utilizado previamente, representando la 
+                            <strong>reutilización de recursos compartidos</strong> en sistemas reales.
+                        </p>
+                          
+                        <p>
+                            El objetivo principal de este proyecto fue <strong>representar de manera visual, 
+                            dinámica y sencilla el funcionamiento de la gestión de procesos y recursos 
+                            en la zona crítica de una computadora</strong>, facilitando así la comprensión 
+                            de conceptos clave como la <strong>concurrencia, la sincronización</strong> y 
+                            la <strong>gestión de prioridades</strong>.
+                        </p>
+                    </div>  
+                </div>
+                <div>
+                    <div class="text-center mb-4">
+                        <h2 class="p-4 bg-dark text-white rounded-3">Proyecto 2: Sistema de Registro para Universidad</h2>
+                        <a href="https://youtu.be/IMc2gXZKMRQ?si=t29F3sMoZDtvP0xf" target="_blank">
+                        <img src="imagenes/ProyectoSistemaDeRegistroU.jpg" class="img-fluid rounded-3" alt="Imagen de proyecto1" width="600"></a>
+                    </div>
+                    <div style="font-size: large;">
+                        <p>
+                            En este proyecto, mi grupo y yo desarrollamos un sistema de 
+                            <strong>registro académico para una universidad</strong>,
+                            utilizando <strong>Java</strong> para la interfaz y lógica del programa, y 
+                            <strong>MySQL</strong> como motor de base de datos.
+                        </p>
+                    
+                        <p>
+                            El sistema permite realizar diversas acciones clave como:
+                        </p>
+                        <ul>
+                            <li>Registrar <strong>estudiantes</strong> y <strong>docentes</strong>.</li>
+                            <li>Asignar <strong>materias</strong> a los estudiantes.</li>
+                            <li>Designar <strong>docentes responsables</strong> de materias específicas.</li>
+                            <li>Consultar y visualizar gráficamente los datos almacenados en la base de datos.</li>
+                        </ul>
+                    
+                        <p>
+                            Además, implementamos una funcionalidad que muestra todas las <strong>tablas normalizadas</strong> 
+                            de la base de datos, con sus respectivos <strong>atributos</strong> y <strong>relaciones</strong>, 
+                            representadas de forma clara mediante consultas SQL que se visualizan en una <strong>JTable</strong>.
+                        </p>
+                    
+                        <p>
+                            También desarrollamos un módulo de <strong>gráficas dinámicas</strong> que representa tanto <strong>porcentajes como cantidades</strong>,
+                            en función de la información recuperada desde la base de datos. Un aspecto importante es que estas gráficas se actualizan en tiempo real:
+                            <strong>cualquier modificación, eliminación o adición de datos</strong> en la base afecta directamente a las visualizaciones,
+                            garantizando así la <strong>consistencia</strong> y <strong>actualidad</strong> de la información mostrada.
+                        </p>
+                    
+                        <p>
+                            Este proyecto tiene como objetivo principal <strong>facilitar la gestión académica</strong> y mostrar de manera
+                            <strong>visual y estructurada</strong> cómo interactúan los datos dentro de un sistema educativo, haciendo uso de buenas prácticas
+                            tanto en programación como en diseño de bases de datos.
+                        </p>
+                    </div>  
+                </div>
+                <div>
+                    <div class="text-center mb-4">
+                        <h2 class="p-4 bg-dark text-white rounded-3">Proyecto 3: Tanquesito</h2>
+                        <a href="https://youtu.be/7KnoWMByJ-c?si=Qd_GGiLgFBAgrFXp" target="_blank">
+                        <img src="imagenes/ProyectoTanquesito.jpg" class="img-fluid rounded-3" alt="Imagen de proyecto1" width="600"></a>
+                    </div>
+                    <div style="font-size: large;">
+                        <p>
+                            En este proyecto, mi grupo y yo desarrollamos un pequeño 
+                            <strong>vehículo autónomo controlado por Bluetooth</strong> 
+                            utilizando <strong>Arduino</strong>.
+                            El sistema incluía distintos componentes electrónicos y mecánicos 
+                            que trabajaban de forma conjunta para lograr tanto el <strong>movimiento</strong>
+                            como funciones <strong>interactivas</strong> y <strong>automatizadas</strong>.
+                        </p>
+
+                        <p>
+                            El vehículo contaba con <strong>dos motores</strong> conectados a las ruedas 
+                            principales para desplazarse, y una tercera rueda libre —similar a las de los 
+                            carritos de supermercado— que brindaba <strong>estabilidad</strong> sin necesidad de motor.
+                        </p>
+                    
+                        <p>
+                            Incorporamos un <strong>módulo Bluetooth</strong> que permitía controlar el movimiento 
+                            del vehículo a través de nuestro <strong>teléfono celular</strong>, brindando una 
+                            experiencia de manejo remota e intuitiva. Todo esto se conectaba a través de un 
+                            <strong>protoboard</strong> y una <strong>placa Arduino</strong>, que coordinaba 
+                            los distintos componentes del sistema.
+                        </p>
+                    
+                        <p>
+                            En la parte frontal del vehículo, instalamos un <strong>servo motor</strong> 
+                            que giraba constantemente <strong>180 grados</strong> de un lado al otro.
+                            Encima del servo colocamos un <strong>sensor ultrasónico</strong>, permitiendo 
+                            así un <strong>escaneo del entorno</strong> en movimiento.
+                            Si el sensor detectaba un objeto a una distancia determinada (por ejemplo, 
+                            <strong>20 cm</strong>), se activaba una función especial del vehículo: 
+                            una <strong>torreta lanzadora</strong>.
+                        </p>
+                    
+                        <p>
+                            Esta torreta fue construida de forma totalmente creativa, utilizando 
+                            <strong>piezas impresas en 3D</strong>, <strong>palillos de paleta</strong>, 
+                            <strong>ligas elásticas</strong> y <strong>hojas de papel enrolladas</strong>.
+                            Funcionaba mediante el <strong>un motor</strong> <em>(como las ruedas)</em>, que permitía lanzar 
+                            pequeños proyectiles (o dulces, como en nuestras pruebas 😄).
+                        </p>
+                    
+                        <p>
+                            Este proyecto no solo nos permitió aplicar conocimientos de 
+                            <strong>programación y electrónica con Arduino</strong>, sino también 
+                            desarrollar <strong>creatividad e ingeniería práctica</strong>, 
+                            integrando sensores, actuadores y control remoto en un 
+                            sistema funcional e interactivo.
+                        </p>
+                    </div>  
+                </div>
+            </div>
+        </section>
+        <footer class="bg-dark text-white text-center p-3">
+            <p>Sígueme en: 
+                <a href="https://github.com/Paula0908" class="text-white" target="_blank">GitHub</a> |
+                <a href="https://linkedin.com/in/paulaandreamendezs/" class="text-white" target="_blank">LinkedIn</a>
+              </p>
+        </footer>
+    </body>
+</html>
